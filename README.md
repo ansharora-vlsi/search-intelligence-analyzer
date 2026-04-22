@@ -14,10 +14,10 @@ It runs fully in the browser (no backend).
 ## Project File Structure
 
 - `index.html`  
-  Main UI layout: upload section, KPI cards, SQL query controls, chart containers, insights and recommendation sections.
+  Main UI layout: upload section, KPI cards, SQL query controls, chart containers, insights, and recommendation sections.
 
 - `style.css`  
-  Dashboard styling with a dark analytics theme, responsive grid layout, table/card styles.
+  Dashboard styling with a dark analytics theme, responsive grid layout, and table/card styles.
 
 - `script.js`  
   App logic:
@@ -30,16 +30,19 @@ It runs fully in the browser (no backend).
   - PM recommendation generation with estimated impact
 
 - `data/sample.csv`  
-  Mock search logs with columns:
+  Mock search logs with columns:  
   `query,results_count,clicks,timestamp`
 
 ## Live Demo
-[Search Intelligence Analyzer](https://your-username.github.io/search-intelligence-analyzer/)
+
+[Search Intelligence Analyzer](https://ansharora-vlsi.github.io/search-intelligence-analyzer/)
 
 ## Problem
-E-commerce users often search but don’t click. This project analyzes search logs to identify why discovery fails.
+
+E-commerce users often search but don’t click. This project analyzes search logs to identify why product discovery fails.
 
 ## What I Built
+
 - CSV-based search log ingestion
 - In-browser SQL engine using SQL.js
 - KPI dashboard (Zero Result Rate, Average CTR, Abandonment Rate)
@@ -47,6 +50,13 @@ E-commerce users often search but don’t click. This project analyzes search lo
 - Rule-based insight detection (misspellings, brand mismatch, out-of-stock intent)
 - PM recommendation engine with estimated impact
 
+## How to Run
+
+1. Open the live demo link, or run locally with a simple server.
+2. Click **Load Sample Data** (or upload your own CSV).
+3. Use SQL query buttons to inspect zero-result, low-CTR, and reformulation patterns.
+4. Review charts, detected issues, and PM recommendations.
+
 ## Outcome
-A portfolio-ready analytics tool that demonstrates product thinking + implementation skills in one project.s"
-- "Generated actionable recommendations with estimated KPI impact"
+
+A portfolio-ready analytics tool that demonstrates product thinking and implementation skills in one project.
