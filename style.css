@@ -1,12 +1,13 @@
 :root {
-  --bg: #0c111b;
-  --panel: #141c2b;
-  --panel-border: #293249;
-  --text: #e5ebff;
-  --muted: #98a6c5;
-  --accent: #6ea8fe;
-  --accent-2: #4ade80;
-  --danger: #fb7185;
+  --bg: #0f1117;
+  --panel: #1a1f2b;
+  --panel-soft: #202739;
+  --panel-border: #3b435b;
+  --text: #f2efe7;
+  --muted: #b5b0a3;
+  --accent: #d4af37;
+  --accent-2: #7bc47f;
+  --danger: #d06772;
 }
 
 * {
@@ -15,8 +16,8 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: radial-gradient(circle at top, #18243d, var(--bg) 32%);
+  font-family: "Georgia", "Times New Roman", serif;
+  background: radial-gradient(circle at top, #2a3146, var(--bg) 34%);
   color: var(--text);
 }
 
@@ -26,8 +27,8 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 1.2rem 1.5rem;
-  border-bottom: 1px solid var(--panel-border);
-  background: rgba(10, 15, 27, 0.7);
+  border-bottom: 1px solid #4e5773;
+  background: rgba(20, 24, 37, 0.86);
   backdrop-filter: blur(4px);
   position: sticky;
   top: 0;
@@ -37,6 +38,7 @@ body {
 h1 {
   margin: 0;
   font-size: 1.35rem;
+  letter-spacing: 0.2px;
 }
 
 h2 {
@@ -75,9 +77,10 @@ h3 {
 
 .panel {
   border: 1px solid var(--panel-border);
-  background: var(--panel);
+  background: linear-gradient(180deg, var(--panel-soft), var(--panel));
   border-radius: 14px;
   padding: 1rem;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.25);
 }
 
 .muted {
@@ -99,20 +102,23 @@ h3 {
 button,
 input[type="file"]::file-selector-button {
   border: 1px solid var(--panel-border);
-  background: #1a2740;
+  background: #2a3247;
   color: var(--text);
   padding: 0.5rem 0.75rem;
   border-radius: 8px;
   cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
 }
 
 button:hover,
 input[type="file"]::file-selector-button:hover {
   border-color: var(--accent);
+  transform: translateY(-1px);
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.14);
 }
 
 button.secondary {
-  background: #223357;
+  background: #313a53;
 }
 
 .kpi-grid {
@@ -123,7 +129,7 @@ button.secondary {
 
 .kpi-card {
   border: 1px solid var(--panel-border);
-  background: #111a2c;
+  background: #171d2d;
   border-radius: 14px;
   padding: 0.8rem 1rem;
 }
@@ -142,7 +148,7 @@ button.secondary {
 }
 
 .query-btn {
-  background: #1d2e4f;
+  background: #2f3954;
 }
 
 .table-wrap {
@@ -166,8 +172,16 @@ td {
 }
 
 th {
-  background: #18243d;
-  color: #b7c7ea;
+  background: #2a3247;
+  color: #efe1b0;
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+tbody tr:hover {
+  background: rgba(212, 175, 55, 0.08);
 }
 
 .chart-grid {
@@ -195,7 +209,7 @@ th {
 .issue-card,
 .recommendation-card {
   border: 1px solid var(--panel-border);
-  background: #10182a;
+  background: #161c2b;
   border-radius: 10px;
   padding: 0.75rem;
 }
@@ -218,6 +232,27 @@ th {
   font-weight: 700;
 }
 
+/* Prevent extra-tall charts and reduce page scroll. */
+.chart-grid .panel {
+  min-height: 360px;
+}
+
+.chart-grid .full-width {
+  min-height: 340px;
+}
+
+canvas {
+  width: 100% !important;
+  height: 280px !important;
+  max-height: 280px !important;
+  display: block;
+}
+
+.full-width canvas {
+  height: 250px !important;
+  max-height: 250px !important;
+}
+
 .footer {
   text-align: center;
   color: var(--muted);
@@ -230,5 +265,16 @@ th {
   .chart-grid,
   .two-col {
     grid-template-columns: 1fr;
+  }
+
+  .chart-grid .panel,
+  .chart-grid .full-width {
+    min-height: 310px;
+  }
+
+  canvas,
+  .full-width canvas {
+    height: 220px !important;
+    max-height: 220px !important;
   }
 }
