@@ -1,37 +1,421 @@
-query,results_count,clicks,timestamp
-iphone 14 case,120,18,2026-04-15T10:12:00
-iphon 14 case,0,0,2026-04-15T10:13:00
-nike running shoes,56,2,2026-04-15T10:14:00
-nike running shoes size 10,0,0,2026-04-15T10:16:00
-samsung charger,85,7,2026-04-15T11:00:00
-samsng charger,0,0,2026-04-15T11:03:00
-wireless headphones,160,12,2026-04-15T11:20:00
-hedfone bluetooth,0,0,2026-04-15T11:21:00
-sony earbuds,67,0,2026-04-15T11:50:00
-adidas hoodie,42,1,2026-04-15T12:20:00
-adidas hoddie,0,0,2026-04-15T12:21:00
-apple watch strap,98,10,2026-04-15T13:10:00
-apple watc strap,0,0,2026-04-15T13:13:00
-nike socks,75,0,2026-04-16T09:10:00
-nike socks restock,0,0,2026-04-16T09:11:00
-gaming mouse,102,9,2026-04-16T09:30:00
-gaming mouse wireless,91,8,2026-04-16T09:31:00
-laptop stand,110,4,2026-04-16T10:00:00
-laptop stnd,0,0,2026-04-16T10:01:00
-nikonn camera,0,0,2026-04-16T10:15:00
-nikon camera,34,1,2026-04-16T10:16:00
-sony ps5 controller,47,0,2026-04-16T11:00:00
-ps5 controller out of stock,0,0,2026-04-16T11:01:00
-coffee maker,89,11,2026-04-16T11:45:00
-cofee maker,0,0,2026-04-16T11:47:00
-air fryer,120,13,2026-04-17T09:05:00
-air fryer xl,96,9,2026-04-17T09:08:00
-air frayer,0,0,2026-04-17T09:10:00
-mens formal shoes,55,1,2026-04-17T10:00:00
-men formal shoes,48,0,2026-04-17T10:02:00
-water bottle,132,14,2026-04-17T10:40:00
-steel water bottle,98,6,2026-04-17T10:42:00
-water bottel,0,0,2026-04-17T10:43:00
-office chair,67,3,2026-04-17T11:20:00
-ergonomic office chair,54,2,2026-04-17T11:23:00
-chair unavailable,0,0,2026-04-17T11:24:00
+session_id,timestamp,query,query_group,category,brand,device_type,results_count,clicks,adds_to_cart,feature_flag
+S1000,2026-04-01T09:00,iphone 14 case,iphone_case,Accessories,Apple,tablet,115,12,3,pre_launch
+S1001,2026-04-01T09:02,iphone 14 case,iphone_case,Accessories,Apple,tablet,123,17,5,pre_launch
+S1002,2026-04-01T09:17,nike running shoes,nike_shoes,Footwear,Nike,mobile,66,2,0,pre_launch
+S1003,2026-04-01T09:19,nike running shoes,nike_shoes,Footwear,Nike,mobile,73,4,1,pre_launch
+S1004,2026-04-01T09:34,samsung charger,samsung_charger,Electronics,Samsung,desktop,87,6,2,pre_launch
+S1005,2026-04-01T09:36,samsung charger,samsung_charger,Electronics,Samsung,desktop,93,9,3,pre_launch
+S1006,2026-04-01T09:51,wireless headphones,wireless_headphones,Electronics,Sony,mobile,148,11,3,pre_launch
+S1007,2026-04-01T09:53,wireless headphones,wireless_headphones,Electronics,Sony,mobile,153,17,5,pre_launch
+S1008,2026-04-01T10:08,adidas hoodie,adidas_hoodie,Apparel,Adidas,mobile,54,2,0,pre_launch
+S1009,2026-04-01T10:10,adidas hoodie,adidas_hoodie,Apparel,Adidas,mobile,58,4,1,pre_launch
+S1010,2026-04-01T10:25,apple watch strap,apple_watch_strap,Accessories,Apple,mobile,105,9,2,pre_launch
+S1011,2026-04-01T10:27,apple watch strap,apple_watch_strap,Accessories,Apple,mobile,108,13,4,pre_launch
+S1012,2026-04-01T10:42,nike socks,nike_socks,Footwear,Nike,tablet,83,2,0,pre_launch
+S1013,2026-04-01T10:44,nike socks,nike_socks,Footwear,Nike,tablet,85,4,1,pre_launch
+S1014,2026-04-01T10:59,gaming mouse,gaming_mouse,Electronics,Logitech,desktop,117,12,3,pre_launch
+S1015,2026-04-01T11:01,gaming mouse,gaming_mouse,Electronics,Logitech,desktop,118,15,5,pre_launch
+S1016,2026-04-01T11:16,laptop stand,laptop_stand,Home Office,Generic,desktop,103,5,1,pre_launch
+S1017,2026-04-01T11:18,laptop stand,laptop_stand,Home Office,Generic,desktop,103,8,3,pre_launch
+S1018,2026-04-01T11:33,nikon camera,nikon_camera,Electronics,Nikon,mobile,44,2,0,pre_launch
+S1019,2026-04-01T11:35,nikon camera,nikon_camera,Electronics,Nikon,mobile,43,3,1,pre_launch
+S1020,2026-04-01T11:50,sony ps5 controller,ps5_controller,Gaming,Sony,desktop,57,2,0,pre_launch
+S1021,2026-04-01T11:52,ps5 controller,ps5_controller,Gaming,Sony,desktop,55,3,1,pre_launch
+S1022,2026-04-01T12:07,coffee maker,coffee_maker,Home,Keurig,mobile,90,8,2,pre_launch
+S1023,2026-04-01T12:09,coffee maker,coffee_maker,Home,Keurig,mobile,98,12,4,pre_launch
+S1024,2026-04-02T09:07,iphon 14 case,iphone_case,Accessories,Apple,mobile,0,0,0,pre_launch
+S1025,2026-04-02T09:24,nike running shoes size 10,nike_shoes,Footwear,Nike,mobile,0,0,0,pre_launch
+S1026,2026-04-02T09:41,samsng charger,samsung_charger,Electronics,Samsung,mobile,0,0,0,pre_launch
+S1027,2026-04-02T09:58,hedfone bluetooth,wireless_headphones,Electronics,Sony,desktop,0,0,0,pre_launch
+S1028,2026-04-02T10:15,adidas hoddie,adidas_hoodie,Apparel,Adidas,mobile,0,0,0,pre_launch
+S1029,2026-04-02T10:32,apple watc strap,apple_watch_strap,Accessories,Apple,tablet,0,0,0,pre_launch
+S1030,2026-04-02T10:49,nike socks restock,nike_socks,Footwear,Nike,mobile,0,0,0,pre_launch
+S1031,2026-04-02T11:06,gaming mouse wireless,gaming_mouse,Electronics,Logitech,desktop,118,12,3,pre_launch
+S1032,2026-04-02T11:23,laptop stnd,laptop_stand,Home Office,Generic,mobile,0,0,0,pre_launch
+S1033,2026-04-02T11:40,nikonn camera,nikon_camera,Electronics,Nikon,desktop,0,0,0,pre_launch
+S1034,2026-04-02T11:57,ps5 controller out of stock,ps5_controller,Gaming,Sony,desktop,0,0,0,pre_launch
+S1035,2026-04-02T12:14,cofee maker,coffee_maker,Home,Keurig,tablet,0,0,0,pre_launch
+S1036,2026-04-03T09:14,iphone 14 cover,iphone_case,Accessories,Apple,mobile,117,12,3,pre_launch
+S1037,2026-04-03T09:31,nikke running shoes,nike_shoes,Footwear,Nike,tablet,0,0,0,pre_launch
+S1038,2026-04-03T09:48,fast samsung charger,samsung_charger,Electronics,Samsung,desktop,89,6,2,pre_launch
+S1039,2026-04-03T10:05,sony wireless headphones,wireless_headphones,Electronics,Sony,desktop,150,12,3,pre_launch
+S1040,2026-04-03T10:22,adidas zip hoodie,adidas_hoodie,Apparel,Adidas,tablet,56,2,1,pre_launch
+S1041,2026-04-03T10:39,apple watch band,apple_watch_strap,Accessories,Apple,mobile,107,9,2,pre_launch
+S1042,2026-04-03T10:56,nike ankle socks,nike_socks,Footwear,Nike,mobile,85,2,0,pre_launch
+S1043,2026-04-03T11:13,gaming mause,gaming_mouse,Electronics,Logitech,mobile,0,0,0,pre_launch
+S1044,2026-04-03T11:30,adjustable laptop stand,laptop_stand,Home Office,Generic,desktop,105,5,1,pre_launch
+S1045,2026-04-03T11:47,nikon dslr,nikon_camera,Electronics,Nikon,desktop,35,1,0,pre_launch
+S1046,2026-04-03T12:04,ps5 dualsense controller,ps5_controller,Gaming,Sony,mobile,48,1,0,pre_launch
+S1047,2026-04-03T12:21,single serve coffee maker,coffee_maker,Home,Keurig,mobile,92,8,2,pre_launch
+S1048,2026-04-04T09:21,iphone 14 case,iphone_case,Accessories,Apple,tablet,118,13,4,pre_launch
+S1049,2026-04-04T09:38,nike running shoes,nike_shoes,Footwear,Nike,mobile,69,2,0,pre_launch
+S1050,2026-04-04T09:55,samsung charger,samsung_charger,Electronics,Samsung,desktop,90,6,2,pre_launch
+S1051,2026-04-04T10:12,wireless headphones,wireless_headphones,Electronics,Sony,mobile,151,11,3,pre_launch
+S1052,2026-04-04T10:29,adidas hoodie,adidas_hoodie,Apparel,Adidas,mobile,57,2,0,pre_launch
+S1053,2026-04-04T10:46,apple watch strap,apple_watch_strap,Accessories,Apple,mobile,108,9,2,pre_launch
+S1054,2026-04-04T11:03,nike socks,nike_socks,Footwear,Nike,tablet,86,2,0,pre_launch
+S1055,2026-04-04T11:20,gaming mouse,gaming_mouse,Electronics,Logitech,desktop,120,12,3,pre_launch
+S1056,2026-04-04T11:37,laptop stand,laptop_stand,Home Office,Generic,desktop,95,5,1,pre_launch
+S1057,2026-04-04T11:54,nikon camera,nikon_camera,Electronics,Nikon,mobile,36,1,0,pre_launch
+S1058,2026-04-04T12:11,sony ps5 controller,ps5_controller,Gaming,Sony,desktop,49,1,0,pre_launch
+S1059,2026-04-04T12:28,coffee maker,coffee_maker,Home,Keurig,mobile,93,8,2,pre_launch
+S1060,2026-04-05T09:28,iphon 14 case,iphone_case,Accessories,Apple,mobile,0,0,0,pre_launch
+S1061,2026-04-05T09:30,iphone 14 case,iphone_case,Accessories,Apple,mobile,123,17,5,pre_launch
+S1062,2026-04-05T09:45,nike running shoes size 10,nike_shoes,Footwear,Nike,mobile,0,0,0,pre_launch
+S1063,2026-04-05T09:47,nike running shoes,nike_shoes,Footwear,Nike,mobile,73,4,1,pre_launch
+S1064,2026-04-05T10:02,samsng charger,samsung_charger,Electronics,Samsung,mobile,0,0,0,pre_launch
+S1065,2026-04-05T10:04,samsung charger,samsung_charger,Electronics,Samsung,mobile,93,9,3,pre_launch
+S1066,2026-04-05T10:19,hedfone bluetooth,wireless_headphones,Electronics,Sony,desktop,0,0,0,pre_launch
+S1067,2026-04-05T10:21,wireless headphones,wireless_headphones,Electronics,Sony,desktop,153,17,5,pre_launch
+S1068,2026-04-05T10:36,adidas hoddie,adidas_hoodie,Apparel,Adidas,mobile,0,0,0,pre_launch
+S1069,2026-04-05T10:38,adidas hoodie,adidas_hoodie,Apparel,Adidas,mobile,58,4,1,pre_launch
+S1070,2026-04-05T10:53,apple watc strap,apple_watch_strap,Accessories,Apple,tablet,0,0,0,pre_launch
+S1071,2026-04-05T10:55,apple watch strap,apple_watch_strap,Accessories,Apple,tablet,108,13,4,pre_launch
+S1072,2026-04-05T11:10,nike socks restock,nike_socks,Footwear,Nike,mobile,0,0,0,pre_launch
+S1073,2026-04-05T11:12,nike socks,nike_socks,Footwear,Nike,mobile,85,4,1,pre_launch
+S1074,2026-04-05T11:27,gaming mouse wireless,gaming_mouse,Electronics,Logitech,desktop,110,11,3,pre_launch
+S1075,2026-04-05T11:29,gaming mouse,gaming_mouse,Electronics,Logitech,desktop,118,15,5,pre_launch
+S1076,2026-04-05T11:44,laptop stnd,laptop_stand,Home Office,Generic,mobile,0,0,0,pre_launch
+S1077,2026-04-05T11:46,laptop stand,laptop_stand,Home Office,Generic,mobile,103,8,3,pre_launch
+S1078,2026-04-05T12:01,nikonn camera,nikon_camera,Electronics,Nikon,desktop,0,0,0,pre_launch
+S1079,2026-04-05T12:03,nikon camera,nikon_camera,Electronics,Nikon,desktop,43,3,1,pre_launch
+S1080,2026-04-05T12:18,ps5 controller out of stock,ps5_controller,Gaming,Sony,desktop,0,0,0,pre_launch
+S1081,2026-04-05T12:20,ps5 controller,ps5_controller,Gaming,Sony,desktop,55,3,1,pre_launch
+S1082,2026-04-05T12:35,cofee maker,coffee_maker,Home,Keurig,tablet,0,0,0,pre_launch
+S1083,2026-04-05T12:37,coffee maker,coffee_maker,Home,Keurig,tablet,98,12,4,pre_launch
+S1084,2026-04-06T09:00,iphone 14 cover,iphone_case,Accessories,Apple,mobile,120,12,3,pre_launch
+S1085,2026-04-06T09:17,nikke running shoes,nike_shoes,Footwear,Nike,tablet,0,0,0,pre_launch
+S1086,2026-04-06T09:34,fast samsung charger,samsung_charger,Electronics,Samsung,desktop,92,6,2,pre_launch
+S1087,2026-04-06T09:51,sony wireless headphones,wireless_headphones,Electronics,Sony,desktop,153,12,3,pre_launch
+S1088,2026-04-06T10:08,adidas zip hoodie,adidas_hoodie,Apparel,Adidas,tablet,59,2,1,pre_launch
+S1089,2026-04-06T10:25,apple watch band,apple_watch_strap,Accessories,Apple,mobile,110,9,2,pre_launch
+S1090,2026-04-06T10:42,nike ankle socks,nike_socks,Footwear,Nike,mobile,77,1,0,pre_launch
+S1091,2026-04-06T10:59,gaming mause,gaming_mouse,Electronics,Logitech,mobile,0,0,0,pre_launch
+S1092,2026-04-06T11:16,adjustable laptop stand,laptop_stand,Home Office,Generic,desktop,97,5,1,pre_launch
+S1093,2026-04-06T11:33,nikon dslr,nikon_camera,Electronics,Nikon,desktop,38,2,0,pre_launch
+S1094,2026-04-06T11:50,ps5 dualsense controller,ps5_controller,Gaming,Sony,mobile,51,1,0,pre_launch
+S1095,2026-04-06T12:07,single serve coffee maker,coffee_maker,Home,Keurig,mobile,95,8,2,pre_launch
+S1096,2026-04-07T09:07,iphone 14 case,iphone_case,Accessories,Apple,tablet,121,13,4,pre_launch
+S1097,2026-04-07T09:24,nike running shoes,nike_shoes,Footwear,Nike,mobile,72,2,0,pre_launch
+S1098,2026-04-07T09:41,samsung charger,samsung_charger,Electronics,Samsung,desktop,93,7,2,pre_launch
+S1099,2026-04-07T09:58,wireless headphones,wireless_headphones,Electronics,Sony,mobile,154,12,3,pre_launch
+S1100,2026-04-07T10:15,adidas hoodie,adidas_hoodie,Apparel,Adidas,mobile,60,2,0,pre_launch
+S1101,2026-04-07T10:32,apple watch strap,apple_watch_strap,Accessories,Apple,mobile,100,8,2,pre_launch
+S1102,2026-04-07T10:49,nike socks,nike_socks,Footwear,Nike,tablet,78,2,0,pre_launch
+S1103,2026-04-07T11:06,gaming mouse,gaming_mouse,Electronics,Logitech,desktop,112,11,3,pre_launch
+S1104,2026-04-07T11:23,laptop stand,laptop_stand,Home Office,Generic,desktop,98,5,1,pre_launch
+S1105,2026-04-07T11:40,nikon camera,nikon_camera,Electronics,Nikon,mobile,39,1,0,pre_launch
+S1106,2026-04-07T11:57,sony ps5 controller,ps5_controller,Gaming,Sony,desktop,52,2,0,pre_launch
+S1107,2026-04-07T12:14,coffee maker,coffee_maker,Home,Keurig,mobile,96,8,2,pre_launch
+S1108,2026-04-08T09:14,iphon 14 case,iphone_case,Accessories,Apple,mobile,0,0,0,pre_launch
+S1109,2026-04-08T09:31,nike running shoes size 10,nike_shoes,Footwear,Nike,mobile,0,0,0,pre_launch
+S1110,2026-04-08T09:48,samsng charger,samsung_charger,Electronics,Samsung,mobile,0,0,0,pre_launch
+S1111,2026-04-08T10:05,hedfone bluetooth,wireless_headphones,Electronics,Sony,desktop,0,0,0,pre_launch
+S1112,2026-04-08T10:22,adidas hoddie,adidas_hoodie,Apparel,Adidas,mobile,0,0,0,pre_launch
+S1113,2026-04-08T10:39,apple watc strap,apple_watch_strap,Accessories,Apple,tablet,0,0,0,pre_launch
+S1114,2026-04-08T10:56,nike socks restock,nike_socks,Footwear,Nike,mobile,0,0,0,pre_launch
+S1115,2026-04-08T11:13,gaming mouse wireless,gaming_mouse,Electronics,Logitech,desktop,113,11,3,pre_launch
+S1116,2026-04-08T11:30,laptop stnd,laptop_stand,Home Office,Generic,mobile,0,0,0,pre_launch
+S1117,2026-04-08T11:47,nikonn camera,nikon_camera,Electronics,Nikon,desktop,0,0,0,pre_launch
+S1118,2026-04-08T12:04,ps5 controller out of stock,ps5_controller,Gaming,Sony,desktop,0,0,0,pre_launch
+S1119,2026-04-08T12:21,cofee maker,coffee_maker,Home,Keurig,tablet,0,0,0,pre_launch
+S1120,2026-04-09T09:21,iphone 14 cover,iphone_case,Accessories,Apple,mobile,123,13,3,pre_launch
+S1121,2026-04-09T09:23,iphone 14 case,iphone_case,Accessories,Apple,mobile,123,17,5,pre_launch
+S1122,2026-04-09T09:38,nikke running shoes,nike_shoes,Footwear,Nike,tablet,0,0,0,pre_launch
+S1123,2026-04-09T09:40,nike running shoes,nike_shoes,Footwear,Nike,tablet,73,4,1,pre_launch
+S1124,2026-04-09T09:55,fast samsung charger,samsung_charger,Electronics,Samsung,desktop,95,7,2,pre_launch
+S1125,2026-04-09T09:57,samsung charger,samsung_charger,Electronics,Samsung,desktop,93,9,3,pre_launch
+S1126,2026-04-09T10:12,sony wireless headphones,wireless_headphones,Electronics,Sony,desktop,145,12,3,pre_launch
+S1127,2026-04-09T10:14,wireless headphones,wireless_headphones,Electronics,Sony,desktop,153,17,5,pre_launch
+S1128,2026-04-09T10:29,adidas zip hoodie,adidas_hoodie,Apparel,Adidas,tablet,51,2,1,pre_launch
+S1129,2026-04-09T10:31,adidas hoodie,adidas_hoodie,Apparel,Adidas,tablet,58,4,1,pre_launch
+S1130,2026-04-09T10:46,apple watch band,apple_watch_strap,Accessories,Apple,mobile,102,9,2,pre_launch
+S1131,2026-04-09T10:48,apple watch strap,apple_watch_strap,Accessories,Apple,mobile,108,13,4,pre_launch
+S1132,2026-04-09T11:03,nike ankle socks,nike_socks,Footwear,Nike,mobile,80,2,0,pre_launch
+S1133,2026-04-09T11:05,nike socks,nike_socks,Footwear,Nike,mobile,85,4,1,pre_launch
+S1134,2026-04-09T11:20,gaming mause,gaming_mouse,Electronics,Logitech,mobile,0,0,0,pre_launch
+S1135,2026-04-09T11:22,gaming mouse,gaming_mouse,Electronics,Logitech,mobile,118,15,5,pre_launch
+S1136,2026-04-09T11:37,adjustable laptop stand,laptop_stand,Home Office,Generic,desktop,100,5,1,pre_launch
+S1137,2026-04-09T11:39,laptop stand,laptop_stand,Home Office,Generic,desktop,103,8,3,pre_launch
+S1138,2026-04-09T11:54,nikon dslr,nikon_camera,Electronics,Nikon,desktop,41,2,0,pre_launch
+S1139,2026-04-09T11:56,nikon camera,nikon_camera,Electronics,Nikon,desktop,43,3,1,pre_launch
+S1140,2026-04-09T12:11,ps5 dualsense controller,ps5_controller,Gaming,Sony,mobile,54,2,0,pre_launch
+S1141,2026-04-09T12:13,ps5 controller,ps5_controller,Gaming,Sony,mobile,55,3,1,pre_launch
+S1142,2026-04-09T12:28,single serve coffee maker,coffee_maker,Home,Keurig,mobile,98,8,2,pre_launch
+S1143,2026-04-09T12:30,coffee maker,coffee_maker,Home,Keurig,mobile,98,12,4,pre_launch
+S1144,2026-04-10T09:28,iphone 14 case,iphone_case,Accessories,Apple,tablet,124,13,4,pre_launch
+S1145,2026-04-10T09:45,nike running shoes,nike_shoes,Footwear,Nike,mobile,75,2,0,pre_launch
+S1146,2026-04-10T10:02,samsung charger,samsung_charger,Electronics,Samsung,desktop,85,6,2,pre_launch
+S1147,2026-04-10T10:19,wireless headphones,wireless_headphones,Electronics,Sony,mobile,146,11,3,pre_launch
+S1148,2026-04-10T10:36,adidas hoodie,adidas_hoodie,Apparel,Adidas,mobile,52,2,0,pre_launch
+S1149,2026-04-10T10:53,apple watch strap,apple_watch_strap,Accessories,Apple,mobile,103,9,2,pre_launch
+S1150,2026-04-10T11:10,nike socks,nike_socks,Footwear,Nike,tablet,81,2,0,pre_launch
+S1151,2026-04-10T11:27,gaming mouse,gaming_mouse,Electronics,Logitech,desktop,115,12,3,pre_launch
+S1152,2026-04-10T11:44,laptop stand,laptop_stand,Home Office,Generic,desktop,101,5,1,pre_launch
+S1153,2026-04-10T12:01,nikon camera,nikon_camera,Electronics,Nikon,mobile,42,2,0,pre_launch
+S1154,2026-04-10T12:18,sony ps5 controller,ps5_controller,Gaming,Sony,desktop,55,2,0,pre_launch
+S1155,2026-04-10T12:35,coffee maker,coffee_maker,Home,Keurig,mobile,99,8,2,pre_launch
+S1156,2026-04-11T09:00,iphon 14 case,iphone_case,Accessories,Apple,mobile,0,0,0,pre_launch
+S1157,2026-04-11T09:17,nike running shoes size 10,nike_shoes,Footwear,Nike,mobile,0,0,0,pre_launch
+S1158,2026-04-11T09:34,samsng charger,samsung_charger,Electronics,Samsung,mobile,0,0,0,pre_launch
+S1159,2026-04-11T09:51,hedfone bluetooth,wireless_headphones,Electronics,Sony,desktop,0,0,0,pre_launch
+S1160,2026-04-11T10:08,adidas hoddie,adidas_hoodie,Apparel,Adidas,mobile,0,0,0,pre_launch
+S1161,2026-04-11T10:25,apple watc strap,apple_watch_strap,Accessories,Apple,tablet,0,0,0,pre_launch
+S1162,2026-04-11T10:42,nike socks restock,nike_socks,Footwear,Nike,mobile,0,0,0,pre_launch
+S1163,2026-04-11T10:59,gaming mouse wireless,gaming_mouse,Electronics,Logitech,desktop,116,12,3,pre_launch
+S1164,2026-04-11T11:16,laptop stnd,laptop_stand,Home Office,Generic,mobile,0,0,0,pre_launch
+S1165,2026-04-11T11:33,nikonn camera,nikon_camera,Electronics,Nikon,desktop,0,0,0,pre_launch
+S1166,2026-04-11T11:50,ps5 controller out of stock,ps5_controller,Gaming,Sony,desktop,0,0,0,pre_launch
+S1167,2026-04-11T12:07,cofee maker,coffee_maker,Home,Keurig,tablet,0,0,0,pre_launch
+S1168,2026-04-12T09:07,iphone 14 cover,iphone_case,Accessories,Apple,mobile,115,12,3,pre_launch
+S1169,2026-04-12T09:24,nikke running shoes,nike_shoes,Footwear,Nike,tablet,0,0,0,pre_launch
+S1170,2026-04-12T09:41,fast samsung charger,samsung_charger,Electronics,Samsung,desktop,87,6,2,pre_launch
+S1171,2026-04-12T09:58,sony wireless headphones,wireless_headphones,Electronics,Sony,desktop,148,12,3,pre_launch
+S1172,2026-04-12T10:15,adidas zip hoodie,adidas_hoodie,Apparel,Adidas,tablet,54,2,1,pre_launch
+S1173,2026-04-12T10:32,apple watch band,apple_watch_strap,Accessories,Apple,mobile,105,9,2,pre_launch
+S1174,2026-04-12T10:49,nike ankle socks,nike_socks,Footwear,Nike,mobile,83,2,0,pre_launch
+S1175,2026-04-12T11:06,gaming mause,gaming_mouse,Electronics,Logitech,mobile,0,0,0,pre_launch
+S1176,2026-04-12T11:23,adjustable laptop stand,laptop_stand,Home Office,Generic,desktop,103,5,1,pre_launch
+S1177,2026-04-12T11:40,nikon dslr,nikon_camera,Electronics,Nikon,desktop,44,2,0,pre_launch
+S1178,2026-04-12T11:57,ps5 dualsense controller,ps5_controller,Gaming,Sony,mobile,57,2,0,pre_launch
+S1179,2026-04-12T12:14,single serve coffee maker,coffee_maker,Home,Keurig,mobile,90,8,2,pre_launch
+S1180,2026-04-13T09:14,iphone 14 case,iphone_case,Accessories,Apple,tablet,116,13,4,pre_launch
+S1181,2026-04-13T09:16,iphone 14 case,iphone_case,Accessories,Apple,tablet,123,17,5,pre_launch
+S1182,2026-04-13T09:31,nike running shoes,nike_shoes,Footwear,Nike,mobile,67,2,0,pre_launch
+S1183,2026-04-13T09:33,nike running shoes,nike_shoes,Footwear,Nike,mobile,73,4,1,pre_launch
+S1184,2026-04-13T09:48,samsung charger,samsung_charger,Electronics,Samsung,desktop,88,6,2,pre_launch
+S1185,2026-04-13T09:50,samsung charger,samsung_charger,Electronics,Samsung,desktop,93,9,3,pre_launch
+S1186,2026-04-13T10:05,wireless headphones,wireless_headphones,Electronics,Sony,mobile,149,11,3,pre_launch
+S1187,2026-04-13T10:07,wireless headphones,wireless_headphones,Electronics,Sony,mobile,153,17,5,pre_launch
+S1188,2026-04-13T10:22,adidas hoodie,adidas_hoodie,Apparel,Adidas,mobile,55,2,0,pre_launch
+S1189,2026-04-13T10:24,adidas hoodie,adidas_hoodie,Apparel,Adidas,mobile,58,4,1,pre_launch
+S1190,2026-04-13T10:39,apple watch strap,apple_watch_strap,Accessories,Apple,mobile,106,9,2,pre_launch
+S1191,2026-04-13T10:41,apple watch strap,apple_watch_strap,Accessories,Apple,mobile,108,13,4,pre_launch
+S1192,2026-04-13T10:56,nike socks,nike_socks,Footwear,Nike,tablet,84,2,0,pre_launch
+S1193,2026-04-13T10:58,nike socks,nike_socks,Footwear,Nike,tablet,85,4,1,pre_launch
+S1194,2026-04-13T11:13,gaming mouse,gaming_mouse,Electronics,Logitech,desktop,118,12,3,pre_launch
+S1195,2026-04-13T11:15,gaming mouse,gaming_mouse,Electronics,Logitech,desktop,118,15,5,pre_launch
+S1196,2026-04-13T11:30,laptop stand,laptop_stand,Home Office,Generic,desktop,104,5,1,pre_launch
+S1197,2026-04-13T11:32,laptop stand,laptop_stand,Home Office,Generic,desktop,103,8,3,pre_launch
+S1198,2026-04-13T11:47,nikon camera,nikon_camera,Electronics,Nikon,mobile,45,2,0,pre_launch
+S1199,2026-04-13T11:49,nikon camera,nikon_camera,Electronics,Nikon,mobile,43,3,1,pre_launch
+S1200,2026-04-13T12:04,sony ps5 controller,ps5_controller,Gaming,Sony,desktop,47,1,0,pre_launch
+S1201,2026-04-13T12:06,ps5 controller,ps5_controller,Gaming,Sony,desktop,55,3,1,pre_launch
+S1202,2026-04-13T12:21,coffee maker,coffee_maker,Home,Keurig,mobile,91,8,2,pre_launch
+S1203,2026-04-13T12:23,coffee maker,coffee_maker,Home,Keurig,mobile,98,12,4,pre_launch
+S1204,2026-04-14T09:21,iphon 14 case,iphone_case,Accessories,Apple,mobile,0,0,0,pre_launch
+S1205,2026-04-14T09:38,nike running shoes size 10,nike_shoes,Footwear,Nike,mobile,0,0,0,pre_launch
+S1206,2026-04-14T09:55,samsng charger,samsung_charger,Electronics,Samsung,mobile,0,0,0,pre_launch
+S1207,2026-04-14T10:12,hedfone bluetooth,wireless_headphones,Electronics,Sony,desktop,0,0,0,pre_launch
+S1208,2026-04-14T10:29,adidas hoddie,adidas_hoodie,Apparel,Adidas,mobile,0,0,0,pre_launch
+S1209,2026-04-14T10:46,apple watc strap,apple_watch_strap,Accessories,Apple,tablet,0,0,0,pre_launch
+S1210,2026-04-14T11:03,nike socks restock,nike_socks,Footwear,Nike,mobile,0,0,0,pre_launch
+S1211,2026-04-14T11:20,gaming mouse wireless,gaming_mouse,Electronics,Logitech,desktop,119,12,3,pre_launch
+S1212,2026-04-14T11:37,laptop stnd,laptop_stand,Home Office,Generic,mobile,0,0,0,pre_launch
+S1213,2026-04-14T11:54,nikonn camera,nikon_camera,Electronics,Nikon,desktop,0,0,0,pre_launch
+S1214,2026-04-14T12:11,ps5 controller out of stock,ps5_controller,Gaming,Sony,desktop,0,0,0,pre_launch
+S1215,2026-04-14T12:28,cofee maker,coffee_maker,Home,Keurig,tablet,0,0,0,pre_launch
+S1216,2026-04-15T09:28,iphone 14 cover,iphone_case,Accessories,Apple,mobile,118,19,6,post_launch
+S1217,2026-04-15T09:45,nikke running shoes,nike_shoes,Footwear,Nike,tablet,0,0,0,post_launch
+S1218,2026-04-15T10:02,fast samsung charger,samsung_charger,Electronics,Samsung,desktop,90,11,3,post_launch
+S1219,2026-04-15T10:19,sony wireless headphones,wireless_headphones,Electronics,Sony,desktop,151,20,6,post_launch
+S1220,2026-04-15T10:36,adidas zip hoodie,adidas_hoodie,Apparel,Adidas,tablet,57,5,1,post_launch
+S1221,2026-04-15T10:53,apple watch band,apple_watch_strap,Accessories,Apple,mobile,108,15,4,post_launch
+S1222,2026-04-15T11:10,nike ankle socks,nike_socks,Footwear,Nike,mobile,86,4,1,post_launch
+S1223,2026-04-15T11:27,gaming mause,gaming_mouse,Electronics,Logitech,mobile,0,0,0,post_launch
+S1224,2026-04-15T11:44,adjustable laptop stand,laptop_stand,Home Office,Generic,desktop,95,9,2,post_launch
+S1225,2026-04-15T12:01,nikon dslr,nikon_camera,Electronics,Nikon,desktop,36,3,1,post_launch
+S1226,2026-04-15T12:18,ps5 dualsense controller,ps5_controller,Gaming,Sony,mobile,49,3,1,post_launch
+S1227,2026-04-15T12:35,single serve coffee maker,coffee_maker,Home,Keurig,mobile,93,11,3,post_launch
+S1228,2026-04-16T09:00,iphone 14 case,iphone_case,Accessories,Apple,tablet,119,20,7,post_launch
+S1229,2026-04-16T09:17,nike running shoes,nike_shoes,Footwear,Nike,mobile,70,5,1,post_launch
+S1230,2026-04-16T09:34,samsung charger,samsung_charger,Electronics,Samsung,desktop,91,11,3,post_launch
+S1231,2026-04-16T09:51,wireless headphones,wireless_headphones,Electronics,Sony,mobile,152,19,5,post_launch
+S1232,2026-04-16T10:08,adidas hoodie,adidas_hoodie,Apparel,Adidas,mobile,58,5,1,post_launch
+S1233,2026-04-16T10:25,apple watch strap,apple_watch_strap,Accessories,Apple,mobile,109,15,4,post_launch
+S1234,2026-04-16T10:42,nike socks,nike_socks,Footwear,Nike,tablet,87,4,1,post_launch
+S1235,2026-04-16T10:59,gaming mouse,gaming_mouse,Electronics,Logitech,desktop,110,15,4,post_launch
+S1236,2026-04-16T11:16,laptop stand,laptop_stand,Home Office,Generic,desktop,96,9,2,post_launch
+S1237,2026-04-16T11:33,nikon camera,nikon_camera,Electronics,Nikon,mobile,37,3,1,post_launch
+S1238,2026-04-16T11:50,sony ps5 controller,ps5_controller,Gaming,Sony,desktop,50,3,1,post_launch
+S1239,2026-04-16T12:07,coffee maker,coffee_maker,Home,Keurig,mobile,94,11,3,post_launch
+S1240,2026-04-17T09:07,iphon 14 case,iphone_case,Accessories,Apple,mobile,0,0,0,post_launch
+S1241,2026-04-17T09:09,iphone 14 case,iphone_case,Accessories,Apple,mobile,123,25,8,post_launch
+S1242,2026-04-17T09:24,nike running shoes size 10,nike_shoes,Footwear,Nike,mobile,0,0,0,post_launch
+S1243,2026-04-17T09:26,nike running shoes,nike_shoes,Footwear,Nike,mobile,73,7,2,post_launch
+S1244,2026-04-17T09:41,samsng charger,samsung_charger,Electronics,Samsung,mobile,0,0,0,post_launch
+S1245,2026-04-17T09:43,samsung charger,samsung_charger,Electronics,Samsung,mobile,93,14,4,post_launch
+S1246,2026-04-17T09:58,hedfone bluetooth,wireless_headphones,Electronics,Sony,desktop,0,0,0,post_launch
+S1247,2026-04-17T10:00,wireless headphones,wireless_headphones,Electronics,Sony,desktop,153,24,8,post_launch
+S1248,2026-04-17T10:15,adidas hoddie,adidas_hoodie,Apparel,Adidas,mobile,0,0,0,post_launch
+S1249,2026-04-17T10:17,adidas hoodie,adidas_hoodie,Apparel,Adidas,mobile,58,7,2,post_launch
+S1250,2026-04-17T10:32,apple watc strap,apple_watch_strap,Accessories,Apple,tablet,0,0,0,post_launch
+S1251,2026-04-17T10:34,apple watch strap,apple_watch_strap,Accessories,Apple,tablet,108,19,6,post_launch
+S1252,2026-04-17T10:49,nike socks restock,nike_socks,Footwear,Nike,mobile,0,0,0,post_launch
+S1253,2026-04-17T10:51,nike socks,nike_socks,Footwear,Nike,mobile,85,7,2,post_launch
+S1254,2026-04-17T11:06,gaming mouse wireless,gaming_mouse,Electronics,Logitech,desktop,111,16,5,post_launch
+S1255,2026-04-17T11:08,gaming mouse,gaming_mouse,Electronics,Logitech,desktop,118,20,6,post_launch
+S1256,2026-04-17T11:23,laptop stnd,laptop_stand,Home Office,Generic,mobile,0,0,0,post_launch
+S1257,2026-04-17T11:25,laptop stand,laptop_stand,Home Office,Generic,mobile,103,12,4,post_launch
+S1258,2026-04-17T11:40,nikonn camera,nikon_camera,Electronics,Nikon,desktop,0,0,0,post_launch
+S1259,2026-04-17T11:42,nikon camera,nikon_camera,Electronics,Nikon,desktop,43,5,2,post_launch
+S1260,2026-04-17T11:57,ps5 controller out of stock,ps5_controller,Gaming,Sony,desktop,0,0,0,post_launch
+S1261,2026-04-17T11:59,ps5 controller,ps5_controller,Gaming,Sony,desktop,55,5,2,post_launch
+S1262,2026-04-17T12:14,cofee maker,coffee_maker,Home,Keurig,tablet,0,0,0,post_launch
+S1263,2026-04-17T12:16,coffee maker,coffee_maker,Home,Keurig,tablet,98,16,5,post_launch
+S1264,2026-04-18T09:14,iphone 14 cover,iphone_case,Accessories,Apple,mobile,121,19,6,post_launch
+S1265,2026-04-18T09:31,nikke running shoes,nike_shoes,Footwear,Nike,tablet,0,0,0,post_launch
+S1266,2026-04-18T09:48,fast samsung charger,samsung_charger,Electronics,Samsung,desktop,93,11,3,post_launch
+S1267,2026-04-18T10:05,sony wireless headphones,wireless_headphones,Electronics,Sony,desktop,154,20,6,post_launch
+S1268,2026-04-18T10:22,adidas zip hoodie,adidas_hoodie,Apparel,Adidas,tablet,60,5,1,post_launch
+S1269,2026-04-18T10:39,apple watch band,apple_watch_strap,Accessories,Apple,mobile,100,14,4,post_launch
+S1270,2026-04-18T10:56,nike ankle socks,nike_socks,Footwear,Nike,mobile,78,4,1,post_launch
+S1271,2026-04-18T11:13,gaming mause,gaming_mouse,Electronics,Logitech,mobile,0,0,0,post_launch
+S1272,2026-04-18T11:30,adjustable laptop stand,laptop_stand,Home Office,Generic,desktop,98,9,2,post_launch
+S1273,2026-04-18T11:47,nikon dslr,nikon_camera,Electronics,Nikon,desktop,39,3,1,post_launch
+S1274,2026-04-18T12:04,ps5 dualsense controller,ps5_controller,Gaming,Sony,mobile,52,3,1,post_launch
+S1275,2026-04-18T12:21,single serve coffee maker,coffee_maker,Home,Keurig,mobile,96,12,3,post_launch
+S1276,2026-04-19T09:21,iphone 14 case,iphone_case,Accessories,Apple,tablet,122,20,7,post_launch
+S1277,2026-04-19T09:38,nike running shoes,nike_shoes,Footwear,Nike,mobile,73,5,1,post_launch
+S1278,2026-04-19T09:55,samsung charger,samsung_charger,Electronics,Samsung,desktop,94,11,3,post_launch
+S1279,2026-04-19T10:12,wireless headphones,wireless_headphones,Electronics,Sony,mobile,155,19,5,post_launch
+S1280,2026-04-19T10:29,adidas hoodie,adidas_hoodie,Apparel,Adidas,mobile,50,4,1,post_launch
+S1281,2026-04-19T10:46,apple watch strap,apple_watch_strap,Accessories,Apple,mobile,101,14,4,post_launch
+S1282,2026-04-19T11:03,nike socks,nike_socks,Footwear,Nike,tablet,79,4,1,post_launch
+S1283,2026-04-19T11:20,gaming mouse,gaming_mouse,Electronics,Logitech,desktop,113,16,5,post_launch
+S1284,2026-04-19T11:37,laptop stand,laptop_stand,Home Office,Generic,desktop,99,9,2,post_launch
+S1285,2026-04-19T11:54,nikon camera,nikon_camera,Electronics,Nikon,mobile,40,3,1,post_launch
+S1286,2026-04-19T12:11,sony ps5 controller,ps5_controller,Gaming,Sony,desktop,53,3,1,post_launch
+S1287,2026-04-19T12:28,coffee maker,coffee_maker,Home,Keurig,mobile,97,12,3,post_launch
+S1288,2026-04-20T09:28,iphon 14 case,iphone_case,Accessories,Apple,mobile,0,0,0,post_launch
+S1289,2026-04-20T09:45,nike running shoes size 10,nike_shoes,Footwear,Nike,mobile,0,0,0,post_launch
+S1290,2026-04-20T10:02,samsng charger,samsung_charger,Electronics,Samsung,mobile,0,0,0,post_launch
+S1291,2026-04-20T10:19,hedfone bluetooth,wireless_headphones,Electronics,Sony,desktop,0,0,0,post_launch
+S1292,2026-04-20T10:36,adidas hoddie,adidas_hoodie,Apparel,Adidas,mobile,0,0,0,post_launch
+S1293,2026-04-20T10:53,apple watc strap,apple_watch_strap,Accessories,Apple,tablet,0,0,0,post_launch
+S1294,2026-04-20T11:10,nike socks restock,nike_socks,Footwear,Nike,mobile,0,0,0,post_launch
+S1295,2026-04-20T11:27,gaming mouse wireless,gaming_mouse,Electronics,Logitech,desktop,114,16,5,post_launch
+S1296,2026-04-20T11:44,laptop stnd,laptop_stand,Home Office,Generic,mobile,0,0,0,post_launch
+S1297,2026-04-20T12:01,nikonn camera,nikon_camera,Electronics,Nikon,desktop,0,0,0,post_launch
+S1298,2026-04-20T12:18,ps5 controller out of stock,ps5_controller,Gaming,Sony,desktop,0,0,0,post_launch
+S1299,2026-04-20T12:35,cofee maker,coffee_maker,Home,Keurig,tablet,0,0,0,post_launch
+S1300,2026-04-21T09:00,iphone 14 cover,iphone_case,Accessories,Apple,mobile,124,20,6,post_launch
+S1301,2026-04-21T09:02,iphone 14 case,iphone_case,Accessories,Apple,mobile,123,25,8,post_launch
+S1302,2026-04-21T09:17,nikke running shoes,nike_shoes,Footwear,Nike,tablet,0,0,0,post_launch
+S1303,2026-04-21T09:19,nike running shoes,nike_shoes,Footwear,Nike,tablet,73,7,2,post_launch
+S1304,2026-04-21T09:34,fast samsung charger,samsung_charger,Electronics,Samsung,desktop,85,10,3,post_launch
+S1305,2026-04-21T09:36,samsung charger,samsung_charger,Electronics,Samsung,desktop,93,14,4,post_launch
+S1306,2026-04-21T09:51,sony wireless headphones,wireless_headphones,Electronics,Sony,desktop,146,19,5,post_launch
+S1307,2026-04-21T09:53,wireless headphones,wireless_headphones,Electronics,Sony,desktop,153,24,8,post_launch
+S1308,2026-04-21T10:08,adidas zip hoodie,adidas_hoodie,Apparel,Adidas,tablet,52,5,1,post_launch
+S1309,2026-04-21T10:10,adidas hoodie,adidas_hoodie,Apparel,Adidas,tablet,58,7,2,post_launch
+S1310,2026-04-21T10:25,apple watch band,apple_watch_strap,Accessories,Apple,mobile,103,15,4,post_launch
+S1311,2026-04-21T10:27,apple watch strap,apple_watch_strap,Accessories,Apple,mobile,108,19,6,post_launch
+S1312,2026-04-21T10:42,nike ankle socks,nike_socks,Footwear,Nike,mobile,81,4,1,post_launch
+S1313,2026-04-21T10:44,nike socks,nike_socks,Footwear,Nike,mobile,85,7,2,post_launch
+S1314,2026-04-21T10:59,gaming mause,gaming_mouse,Electronics,Logitech,mobile,0,0,0,post_launch
+S1315,2026-04-21T11:01,gaming mouse,gaming_mouse,Electronics,Logitech,mobile,118,20,6,post_launch
+S1316,2026-04-21T11:16,adjustable laptop stand,laptop_stand,Home Office,Generic,desktop,101,9,2,post_launch
+S1317,2026-04-21T11:18,laptop stand,laptop_stand,Home Office,Generic,desktop,103,12,4,post_launch
+S1318,2026-04-21T11:33,nikon dslr,nikon_camera,Electronics,Nikon,desktop,42,3,1,post_launch
+S1319,2026-04-21T11:35,nikon camera,nikon_camera,Electronics,Nikon,desktop,43,5,2,post_launch
+S1320,2026-04-21T11:50,ps5 dualsense controller,ps5_controller,Gaming,Sony,mobile,55,3,1,post_launch
+S1321,2026-04-21T11:52,ps5 controller,ps5_controller,Gaming,Sony,mobile,55,5,2,post_launch
+S1322,2026-04-21T12:07,single serve coffee maker,coffee_maker,Home,Keurig,mobile,99,12,3,post_launch
+S1323,2026-04-21T12:09,coffee maker,coffee_maker,Home,Keurig,mobile,98,16,5,post_launch
+S1324,2026-04-22T09:07,iphone 14 case,iphone_case,Accessories,Apple,tablet,125,21,7,post_launch
+S1325,2026-04-22T09:24,nike running shoes,nike_shoes,Footwear,Nike,mobile,65,4,1,post_launch
+S1326,2026-04-22T09:41,samsung charger,samsung_charger,Electronics,Samsung,desktop,86,10,3,post_launch
+S1327,2026-04-22T09:58,wireless headphones,wireless_headphones,Electronics,Sony,mobile,147,18,5,post_launch
+S1328,2026-04-22T10:15,adidas hoodie,adidas_hoodie,Apparel,Adidas,mobile,53,4,1,post_launch
+S1329,2026-04-22T10:32,apple watch strap,apple_watch_strap,Accessories,Apple,mobile,104,15,4,post_launch
+S1330,2026-04-22T10:49,nike socks,nike_socks,Footwear,Nike,tablet,82,4,1,post_launch
+S1331,2026-04-22T11:06,gaming mouse,gaming_mouse,Electronics,Logitech,desktop,116,16,5,post_launch
+S1332,2026-04-22T11:23,laptop stand,laptop_stand,Home Office,Generic,desktop,102,9,2,post_launch
+S1333,2026-04-22T11:40,nikon camera,nikon_camera,Electronics,Nikon,mobile,43,3,1,post_launch
+S1334,2026-04-22T11:57,sony ps5 controller,ps5_controller,Gaming,Sony,desktop,56,3,1,post_launch
+S1335,2026-04-22T12:14,coffee maker,coffee_maker,Home,Keurig,mobile,100,12,3,post_launch
+S1336,2026-04-23T09:14,iphon 14 case,iphone_case,Accessories,Apple,mobile,0,0,0,post_launch
+S1337,2026-04-23T09:31,nike running shoes size 10,nike_shoes,Footwear,Nike,mobile,0,0,0,post_launch
+S1338,2026-04-23T09:48,samsng charger,samsung_charger,Electronics,Samsung,mobile,0,0,0,post_launch
+S1339,2026-04-23T10:05,hedfone bluetooth,wireless_headphones,Electronics,Sony,desktop,0,0,0,post_launch
+S1340,2026-04-23T10:22,adidas hoddie,adidas_hoodie,Apparel,Adidas,mobile,0,0,0,post_launch
+S1341,2026-04-23T10:39,apple watc strap,apple_watch_strap,Accessories,Apple,tablet,0,0,0,post_launch
+S1342,2026-04-23T10:56,nike socks restock,nike_socks,Footwear,Nike,mobile,0,0,0,post_launch
+S1343,2026-04-23T11:13,gaming mouse wireless,gaming_mouse,Electronics,Logitech,desktop,117,16,5,post_launch
+S1344,2026-04-23T11:30,laptop stnd,laptop_stand,Home Office,Generic,mobile,0,0,0,post_launch
+S1345,2026-04-23T11:47,nikonn camera,nikon_camera,Electronics,Nikon,desktop,0,0,0,post_launch
+S1346,2026-04-23T12:04,ps5 controller out of stock,ps5_controller,Gaming,Sony,desktop,0,0,0,post_launch
+S1347,2026-04-23T12:21,cofee maker,coffee_maker,Home,Keurig,tablet,0,0,0,post_launch
+S1348,2026-04-24T09:21,iphone 14 cover,iphone_case,Accessories,Apple,mobile,116,19,6,post_launch
+S1349,2026-04-24T09:38,nikke running shoes,nike_shoes,Footwear,Nike,tablet,0,0,0,post_launch
+S1350,2026-04-24T09:55,fast samsung charger,samsung_charger,Electronics,Samsung,desktop,88,11,3,post_launch
+S1351,2026-04-24T10:12,sony wireless headphones,wireless_headphones,Electronics,Sony,desktop,149,19,5,post_launch
+S1352,2026-04-24T10:29,adidas zip hoodie,adidas_hoodie,Apparel,Adidas,tablet,55,5,1,post_launch
+S1353,2026-04-24T10:46,apple watch band,apple_watch_strap,Accessories,Apple,mobile,106,15,4,post_launch
+S1354,2026-04-24T11:03,nike ankle socks,nike_socks,Footwear,Nike,mobile,84,4,1,post_launch
+S1355,2026-04-24T11:20,gaming mause,gaming_mouse,Electronics,Logitech,mobile,0,0,0,post_launch
+S1356,2026-04-24T11:37,adjustable laptop stand,laptop_stand,Home Office,Generic,desktop,104,9,2,post_launch
+S1357,2026-04-24T11:54,nikon dslr,nikon_camera,Electronics,Nikon,desktop,45,4,1,post_launch
+S1358,2026-04-24T12:11,ps5 dualsense controller,ps5_controller,Gaming,Sony,mobile,47,3,1,post_launch
+S1359,2026-04-24T12:28,single serve coffee maker,coffee_maker,Home,Keurig,mobile,91,11,3,post_launch
+S1360,2026-04-25T09:28,iphone 14 case,iphone_case,Accessories,Apple,tablet,117,19,6,post_launch
+S1361,2026-04-25T09:30,iphone 14 case,iphone_case,Accessories,Apple,tablet,123,25,8,post_launch
+S1362,2026-04-25T09:45,nike running shoes,nike_shoes,Footwear,Nike,mobile,68,4,1,post_launch
+S1363,2026-04-25T09:47,nike running shoes,nike_shoes,Footwear,Nike,mobile,73,7,2,post_launch
+S1364,2026-04-25T10:02,samsung charger,samsung_charger,Electronics,Samsung,desktop,89,11,3,post_launch
+S1365,2026-04-25T10:04,samsung charger,samsung_charger,Electronics,Samsung,desktop,93,14,4,post_launch
+S1366,2026-04-25T10:19,wireless headphones,wireless_headphones,Electronics,Sony,mobile,150,18,5,post_launch
+S1367,2026-04-25T10:21,wireless headphones,wireless_headphones,Electronics,Sony,mobile,153,24,8,post_launch
+S1368,2026-04-25T10:36,adidas hoodie,adidas_hoodie,Apparel,Adidas,mobile,56,5,1,post_launch
+S1369,2026-04-25T10:38,adidas hoodie,adidas_hoodie,Apparel,Adidas,mobile,58,7,2,post_launch
+S1370,2026-04-25T10:53,apple watch strap,apple_watch_strap,Accessories,Apple,mobile,107,15,4,post_launch
+S1371,2026-04-25T10:55,apple watch strap,apple_watch_strap,Accessories,Apple,mobile,108,19,6,post_launch
+S1372,2026-04-25T11:10,nike socks,nike_socks,Footwear,Nike,tablet,85,4,1,post_launch
+S1373,2026-04-25T11:12,nike socks,nike_socks,Footwear,Nike,tablet,85,7,2,post_launch
+S1374,2026-04-25T11:27,gaming mouse,gaming_mouse,Electronics,Logitech,desktop,119,17,5,post_launch
+S1375,2026-04-25T11:29,gaming mouse,gaming_mouse,Electronics,Logitech,desktop,118,20,6,post_launch
+S1376,2026-04-25T11:44,laptop stand,laptop_stand,Home Office,Generic,desktop,105,9,2,post_launch
+S1377,2026-04-25T11:46,laptop stand,laptop_stand,Home Office,Generic,desktop,103,12,4,post_launch
+S1378,2026-04-25T12:01,nikon camera,nikon_camera,Electronics,Nikon,mobile,35,3,1,post_launch
+S1379,2026-04-25T12:03,nikon camera,nikon_camera,Electronics,Nikon,mobile,43,5,2,post_launch
+S1380,2026-04-25T12:18,sony ps5 controller,ps5_controller,Gaming,Sony,desktop,48,3,1,post_launch
+S1381,2026-04-25T12:20,ps5 controller,ps5_controller,Gaming,Sony,desktop,55,5,2,post_launch
+S1382,2026-04-25T12:35,coffee maker,coffee_maker,Home,Keurig,mobile,92,11,3,post_launch
+S1383,2026-04-25T12:37,coffee maker,coffee_maker,Home,Keurig,mobile,98,16,5,post_launch
+S1384,2026-04-26T09:00,iphon 14 case,iphone_case,Accessories,Apple,mobile,0,0,0,post_launch
+S1385,2026-04-26T09:17,nike running shoes size 10,nike_shoes,Footwear,Nike,mobile,0,0,0,post_launch
+S1386,2026-04-26T09:34,samsng charger,samsung_charger,Electronics,Samsung,mobile,0,0,0,post_launch
+S1387,2026-04-26T09:51,hedfone bluetooth,wireless_headphones,Electronics,Sony,desktop,0,0,0,post_launch
+S1388,2026-04-26T10:08,adidas hoddie,adidas_hoodie,Apparel,Adidas,mobile,0,0,0,post_launch
+S1389,2026-04-26T10:25,apple watc strap,apple_watch_strap,Accessories,Apple,tablet,0,0,0,post_launch
+S1390,2026-04-26T10:42,nike socks restock,nike_socks,Footwear,Nike,mobile,0,0,0,post_launch
+S1391,2026-04-26T10:59,gaming mouse wireless,gaming_mouse,Electronics,Logitech,desktop,120,17,5,post_launch
+S1392,2026-04-26T11:16,laptop stnd,laptop_stand,Home Office,Generic,mobile,0,0,0,post_launch
+S1393,2026-04-26T11:33,nikonn camera,nikon_camera,Electronics,Nikon,desktop,0,0,0,post_launch
+S1394,2026-04-26T11:50,ps5 controller out of stock,ps5_controller,Gaming,Sony,desktop,0,0,0,post_launch
+S1395,2026-04-26T12:07,cofee maker,coffee_maker,Home,Keurig,tablet,0,0,0,post_launch
+S1396,2026-04-27T09:07,iphone 14 cover,iphone_case,Accessories,Apple,mobile,119,19,6,post_launch
+S1397,2026-04-27T09:24,nikke running shoes,nike_shoes,Footwear,Nike,tablet,0,0,0,post_launch
+S1398,2026-04-27T09:41,fast samsung charger,samsung_charger,Electronics,Samsung,desktop,91,11,3,post_launch
+S1399,2026-04-27T09:58,sony wireless headphones,wireless_headphones,Electronics,Sony,desktop,152,20,6,post_launch
+S1400,2026-04-27T10:15,adidas zip hoodie,adidas_hoodie,Apparel,Adidas,tablet,58,5,1,post_launch
+S1401,2026-04-27T10:32,apple watch band,apple_watch_strap,Accessories,Apple,mobile,109,15,4,post_launch
+S1402,2026-04-27T10:49,nike ankle socks,nike_socks,Footwear,Nike,mobile,87,4,1,post_launch
+S1403,2026-04-27T11:06,gaming mause,gaming_mouse,Electronics,Logitech,mobile,0,0,0,post_launch
+S1404,2026-04-27T11:23,adjustable laptop stand,laptop_stand,Home Office,Generic,desktop,96,9,2,post_launch
+S1405,2026-04-27T11:40,nikon dslr,nikon_camera,Electronics,Nikon,desktop,37,3,1,post_launch
+S1406,2026-04-27T11:57,ps5 dualsense controller,ps5_controller,Gaming,Sony,mobile,50,3,1,post_launch
+S1407,2026-04-27T12:14,single serve coffee maker,coffee_maker,Home,Keurig,mobile,94,11,3,post_launch
+S1408,2026-04-28T09:14,iphone 14 case,iphone_case,Accessories,Apple,tablet,120,20,7,post_launch
+S1409,2026-04-28T09:31,nike running shoes,nike_shoes,Footwear,Nike,mobile,71,5,1,post_launch
+S1410,2026-04-28T09:48,samsung charger,samsung_charger,Electronics,Samsung,desktop,92,11,3,post_launch
+S1411,2026-04-28T10:05,wireless headphones,wireless_headphones,Electronics,Sony,mobile,153,19,5,post_launch
+S1412,2026-04-28T10:22,adidas hoodie,adidas_hoodie,Apparel,Adidas,mobile,59,5,1,post_launch
+S1413,2026-04-28T10:39,apple watch strap,apple_watch_strap,Accessories,Apple,mobile,110,16,4,post_launch
+S1414,2026-04-28T10:56,nike socks,nike_socks,Footwear,Nike,tablet,77,4,1,post_launch
+S1415,2026-04-28T11:13,gaming mouse,gaming_mouse,Electronics,Logitech,desktop,111,16,5,post_launch
+S1416,2026-04-28T11:30,laptop stand,laptop_stand,Home Office,Generic,desktop,97,9,2,post_launch
+S1417,2026-04-28T11:47,nikon camera,nikon_camera,Electronics,Nikon,mobile,38,3,1,post_launch
+S1418,2026-04-28T12:04,sony ps5 controller,ps5_controller,Gaming,Sony,desktop,51,3,1,post_launch
+S1419,2026-04-28T12:21,coffee maker,coffee_maker,Home,Keurig,mobile,95,12,3,post_launch
