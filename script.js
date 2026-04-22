@@ -477,22 +477,38 @@ function setStatus(message) {
 function baseChartOptions() {
   return {
     responsive: true,
-    maintainAspectRatio: false,
+    maintainAspectRatio: true,
+    aspectRatio: 2.25,
+    animation: {
+      duration: 700,
+      easing: "easeOutQuart"
+    },
+    interaction: {
+      mode: "index",
+      intersect: false
+    },
     plugins: {
       legend: {
         labels: {
-          color: "#dbe7ff"
+          color: "#efe7cf"
         }
+      },
+      tooltip: {
+        backgroundColor: "rgba(17, 22, 35, 0.95)",
+        borderColor: "#d4af37",
+        borderWidth: 1,
+        titleColor: "#f5edcf",
+        bodyColor: "#e4dbc1"
       }
     },
     scales: {
       x: {
-        ticks: { color: "#aac0ea" },
-        grid: { color: "rgba(180, 198, 237, 0.08)" }
+        ticks: { color: "#d4ccb4" },
+        grid: { color: "rgba(212, 175, 55, 0.09)" }
       },
       y: {
-        ticks: { color: "#aac0ea" },
-        grid: { color: "rgba(180, 198, 237, 0.08)" }
+        ticks: { color: "#d4ccb4" },
+        grid: { color: "rgba(212, 175, 55, 0.09)" }
       }
     }
   };
