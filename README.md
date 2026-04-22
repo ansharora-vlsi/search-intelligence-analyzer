@@ -1,62 +1,169 @@
 # Search Intelligence Analyzer - E-commerce Product Analytics Tool
 
-This is a web-based PM + product-engineering portfolio project that analyzes search behavior to understand why users search but do not click.
+Search Intelligence Analyzer is a Python/Dash portfolio project that diagnoses why e-commerce users search but fail to click or add items to cart.
 
-It runs fully in the browser (no backend).
+The app ingests simulated search logs, segments performance by category and device, compares pre-launch vs post-launch behavior, and maps low-performing queries to product hypotheses a PM can act on.
+
+## Resume-Ready Highlights
+
+- Computes `CTR`, `Search-to-Cart Ratio`, `Zero Result Rate`, and `Query Reformulation Rate`
+- Supports interactive filtering by `date range`, `category`, `device type`, and `launch cohort`
+- Includes a root-cause analysis module for low-performing queries
+- Compares `pre_launch` vs `post_launch` cohorts with simple statistical significance testing
+- Optional **Google Gemini** narrative summaries over the currently filtered slice (API key via environment variable)
+- Built in `Python`, `Dash`, `Pandas`, and `Plotly`
 
 ## Tech Stack
 
-- HTML, CSS, JavaScript (no frameworks)
-- sql.js (SQLite in the browser)
-- Chart.js for charts
-- CSV file as input data
+- Python
+- Dash
+- Pandas
+- Plotly
+- CSV as the underlying mock event dataset
 
-## Project File Structure
+## Project Structure
 
-- `index.html`  
-  Main UI layout: upload section, KPI cards, SQL query controls, chart containers, insights, and recommendation sections.
+- `app.py`  
+  Main Dash entrypoint. Defines layout, upload flow, filters, KPI cards, charts, tables, and callbacks.
 
-- `style.css`  
-  Dashboard styling with a dark analytics theme, responsive grid layout, and table/card styles.
+- `analytics.py`  
+  Analytics logic for filtering, KPI calculation, cohort summaries, root-cause analysis, and pre/post launch significance testing.
 
-- `script.js`  
-  App logic:
-  - CSV parsing
-  - In-browser SQLite table creation with sql.js
-  - Pre-built SQL query execution
-  - KPI calculations
-  - Chart.js rendering
-  - Insight detection (misspellings, brand mismatch, out-of-stock intent)
-  - PM recommendation generation with estimated impact
+- `assets/style.css`  
+  Styling for the Dash app with a premium dark dashboard theme.
 
 - `data/sample.csv`  
-  Mock search logs with columns:  
-  `query,results_count,clicks,timestamp`
+  Enriched mock search-event dataset with:
+  - `session_id`
+  - `timestamp`
+  - `query`
+  - `query_group`
+  - `category`
+  - `brand`
+  - `device_type`
+  - `results_count`
+  - `clicks`
+  - `adds_to_cart`
+  - `feature_flag`
 
-## Live Demo
+- `requirements.txt`  
+  Python dependencies needed to run the app.
 
-[Search Intelligence Analyzer](https://ansharora-vlsi.github.io/search-intelligence-analyzer/)
+- `gemini_insights.py`  
+  Optional Gemini summarization helper. If `GEMINI_API_KEY` is not set, the UI falls back to an offline template.
 
-## Problem
+## What the Dashboard Shows
 
-E-commerce users often search but don’t click. This project analyzes search logs to identify why product discovery fails.
+### KPI Cards
 
-## What I Built
+- CTR
+- Search-to-Cart Ratio
+- Zero Result Rate
+- Reformulation Rate
 
-- CSV-based search log ingestion
-- In-browser SQL engine using SQL.js
-- KPI dashboard (Zero Result Rate, Average CTR, Abandonment Rate)
-- Chart.js visualizations for failure patterns and trends
-- Rule-based insight detection (misspellings, brand mismatch, out-of-stock intent)
-- PM recommendation engine with estimated impact
+### Interactive Filters
 
-## How to Run
+- Date range
+- Category
+- Device type
+- Launch cohort (`pre_launch`, `post_launch`)
 
-1. Open the live demo link, or run locally with a simple server.
-2. Click **Load Sample Data** (or upload your own CSV).
-3. Use SQL query buttons to inspect zero-result, low-CTR, and reformulation patterns.
-4. Review charts, detected issues, and PM recommendations.
+### Visual Analytics
 
-## Outcome
+- Metric trend over time
+- CTR by device
+- Search-to-cart ratio by category
+- Root-cause issue summary
 
-A portfolio-ready analytics tool that demonstrates product thinking and implementation skills in one project.
+### Root-Cause Analysis
+
+The app detects and groups issues such as:
+
+- Zero-result queries
+- Misspelling friction
+- Inventory mismatch
+- Low engagement despite available results
+
+It also maps each issue to:
+
+- a likely product hypothesis
+- a PM-style recommendation
+
+### Feature-Impact Testing
+
+When both `pre_launch` and `post_launch` data are selected, the app runs a simple two-proportion z-test to compare:
+
+- Click-through rate
+- Search-to-cart ratio
+
+This helps support claims about whether post-launch improvements are directionally meaningful.
+
+### Gemini Weekly Insight Layer
+
+The dashboard includes a **Generate AI summary** button.
+
+- If `GEMINI_API_KEY` is configured, the app calls Google Gemini to draft a PM-style weekly narrative in Markdown.
+- If the key is missing, the panel shows an offline template and explains how to enable Gemini.
+
+## How to Run Locally
+
+### Step 1: Install Python
+
+If Python is not installed yet:
+
+1. Go to [https://www.python.org/downloads/](https://www.python.org/downloads/)
+2. Download Python 3
+3. Install it
+
+### Step 2: Open terminal in the project folder
+
+Go into the project folder where `app.py` exists.
+
+### Step 3: Install dependencies
+
+Run:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 3b: (Optional) Enable Gemini locally
+
+1. Create a Gemini API key in Google AI Studio.
+2. Export it in your terminal session (do not paste it into GitHub files):
+
+```bash
+export GEMINI_API_KEY="YOUR_KEY_HERE"
+# optional override:
+export GEMINI_MODEL="gemini-2.0-flash"
+```
+
+### Step 4: Start the dashboard
+
+Run:
+
+```bash
+python app.py
+```
+
+### Step 5: Open in browser
+
+Open:
+
+`http://127.0.0.1:8050`
+
+## How to Use the Dashboard
+
+1. Run the app locally or on a hosted link.
+2. Use the bundled sample dataset or upload a CSV with the same schema.
+3. Adjust filters for date, category, device, or launch cohort.
+4. Review KPI changes across cohorts.
+5. Use the low-performing query table and root-cause analysis module to identify issues.
+6. Check the feature-impact section to compare pre-launch and post-launch performance.
+
+## Notes
+
+- The dataset is simulated, but structured to resemble real search-event logs.
+- The significance testing is intentionally lightweight and educational, not a substitute for a production experimentation platform.
+- Never commit API keys. Use host environment variables instead.
+nking and implementation skills in one project.
