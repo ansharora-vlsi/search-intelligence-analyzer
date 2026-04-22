@@ -1,0 +1,282 @@
+:root {
+  --bg: #0d1017;
+  --bg-soft: #151a25;
+  --panel: #1b2130;
+  --panel-alt: #21293b;
+  --border: #46506b;
+  --text: #f2efe8;
+  --muted: #bfb7a6;
+  --gold: #d4af37;
+  --blue: #86b3d1;
+  --green: #77c18d;
+  --rose: #d06772;
+  --shadow: rgba(0, 0, 0, 0.28);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: radial-gradient(circle at top, #283248, var(--bg) 35%);
+  color: var(--text);
+}
+
+.page-shell {
+  min-height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  background: rgba(14, 18, 29, 0.92);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(10px);
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+
+.badge,
+.impact-badge {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--gold);
+  padding: 0.4rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 1.1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.panel {
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, var(--panel-alt), var(--panel));
+  border-radius: 18px;
+  padding: 1rem;
+  box-shadow: 0 14px 36px var(--shadow);
+}
+
+.hero-panel,
+.filter-panel {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero-copy h2,
+.section-head h2 {
+  margin: 0;
+}
+
+.hero-copy p,
+.section-head p,
+.muted {
+  color: var(--muted);
+}
+
+.hero-actions {
+  min-width: 320px;
+}
+
+.upload-box {
+  border: 1px dashed var(--gold);
+  border-radius: 14px;
+  padding: 1rem;
+  text-align: center;
+  background: rgba(212, 175, 55, 0.07);
+  cursor: pointer;
+}
+
+.upload-box strong,
+.upload-box span {
+  display: block;
+}
+
+.upload-box span {
+  margin-top: 0.2rem;
+  color: var(--muted);
+}
+
+.status {
+  margin-top: 0.7rem;
+  color: var(--green);
+  font-size: 0.95rem;
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+  width: 100%;
+}
+
+.filter-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 14px;
+  padding: 0.9rem;
+}
+
+.filter-card label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.kpi-card {
+  border: 1px solid var(--border);
+  background: rgba(15, 19, 28, 0.7);
+  border-radius: 16px;
+  padding: 1rem;
+}
+
+.kpi-label {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.kpi-value {
+  margin: 0.35rem 0 0.2rem;
+  font-size: 2rem;
+}
+
+.kpi-helper {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.span-2 {
+  grid-column: 1 / -1;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1rem;
+}
+
+.chart-panel .js-plotly-plot,
+.chart-panel .plot-container {
+  height: 330px !important;
+}
+
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner table {
+  color: var(--text);
+  background: transparent;
+}
+
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th {
+  background: #2a3246 !important;
+  color: #f3df99 !important;
+  border-color: var(--border) !important;
+}
+
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner td {
+  background: rgba(255, 255, 255, 0.02) !important;
+  border-color: rgba(70, 80, 107, 0.5) !important;
+}
+
+.impact-summary {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 0.9rem;
+}
+
+.impact-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 0.9rem;
+}
+
+.impact-card h4,
+.impact-card p {
+  margin: 0 0 0.35rem;
+}
+
+.impact-card p {
+  color: var(--muted);
+}
+
+.gemini-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0.75rem 0 0.9rem;
+}
+
+.gemini-status {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.gemini-markdown {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 0.9rem 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  line-height: 1.45;
+}
+
+.gemini-markdown code {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 0.1rem 0.25rem;
+  border-radius: 6px;
+}
+
+@media (max-width: 1100px) {
+  .filter-grid,
+  .kpi-grid,
+  .chart-grid,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-panel,
+  .filter-panel {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions {
+    min-width: 0;
+  }
+}
