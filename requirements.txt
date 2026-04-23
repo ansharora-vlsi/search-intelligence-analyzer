@@ -1,5 +1,5 @@
 dash
 pandas
 plotly
-google-generativeai
+google-generativeai>=0.7.0
 gunicorn
