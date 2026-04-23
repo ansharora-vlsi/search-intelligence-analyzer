@@ -64,7 +64,7 @@ def generate_weekly_summary(
     calling the API.
     """
     api_key = os.getenv("GEMINI_API_KEY", "").strip()
-    model_name = os.getenv("GEMINI_MODEL", "gemini-2.0-flash").strip()
+    model_name = os.getenv("GEMINI_MODEL", "gemini-1.5-flash").strip()
 
     prompt = _build_prompt_payload(kpis, issue_rows, impact_tests)
 
