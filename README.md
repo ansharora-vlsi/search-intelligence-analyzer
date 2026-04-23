@@ -154,7 +154,7 @@ Open:
 
 ## How to Use the Dashboard
 
-1. Run the app locally or on a hosted link.
+1. Run the app locally or on a hosted link(https://search-intelligence-analyzer.onrender.com).
 2. Use the bundled sample dataset or upload a CSV with the same schema.
 3. Adjust filters for date, category, device, or launch cohort.
 4. Review KPI changes across cohorts.
